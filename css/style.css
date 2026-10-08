@@ -38,3 +38,6 @@ body.modal-open{overflow:hidden}dialog{padding:1.1rem;border:0;border-radius:1re
 .post-cover{position:relative;inset:auto;margin-block:auto;padding-block:1.75rem}
 .post-bottom{margin-block-start:.5rem}
 @media(min-width:900px){.hero-visual{min-height:525px}.post-visual{min-height:400px}}
+.hero-visual::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(8,24,18,.3),rgba(8,24,18,.08) 38%,rgba(8,24,18,.72));pointer-events:none}.visual-copy{z-index:2}
+.post-visual::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,24,18,.35),rgba(8,24,18,.12) 38%,rgba(8,24,18,.72));pointer-events:none}.post-top,.post-cover,.post-bottom{z-index:1}.tone-2{color:white}.tone-2 .mini-label{color:var(--lime)}.tone-2 .post-bottom{border-color:#ffffff45}
+.story-phone::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,rgba(8,24,18,.52),rgba(8,24,18,.12) 38%,rgba(8,24,18,.64));pointer-events:none}.story-ui{position:relative;z-index:1}

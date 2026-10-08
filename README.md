@@ -6,10 +6,8 @@ A bilingual, unofficial social media concept portfolio. Built with HTML, CSS and
 - `index.html`: semantic, pre-rendered Arabic page, SEO and Open Graph title/description, viewport and favicon.
 - `css/style.css`: mobile-first design, RTL/LTR logical properties, responsive grids, dialog and reduced-motion support.
 - `js/main.js`: both translation records, section templates, language storage, navigation, Reel preview and local Story interactions.
-- `assets/images/posts/`: four replaceable post graphics.
-- `assets/images/reel/`: Reel preview graphic.
-- `assets/images/stories/`: three Story backgrounds.
-- `assets/images/profile/`: hero, portrait and favicon placeholders.
+- `assets/images/ima-*.png`: farm photography used by the hero, posts, Reel preview and Stories.
+- `assets/images/profile/`: portrait and favicon placeholders.
 - `PLAN.md`: decisions recorded before implementation.
 - `PROGRESS.md`: completed work and verification results.
 
@@ -34,19 +32,10 @@ node -e "const fs=require('fs');const {buildPage}=require('./js/main.js');const 
 ```
 When changing the Arabic SEO title/description, also update the initial `<head>` metadata in `index.html`. Styles are controlled by CSS variables at the top of `css/style.css`.
 
-## Replace placeholders
-All current graphic placeholders are local SVGs, not actual farm photography. Replacement HTML comments are present in both the static page and JS templates.
-- `posts/post-1.svg`: heat-stress educational cow graphic.
-- `posts/post-2.svg`: authentic farm/milking behind-the-scenes photo.
-- `posts/post-3.svg`: udder hygiene educational graphic.
-- `posts/post-4.svg`: milk-production quick-tip graphic.
-- `reel/reel-placeholder.svg`: opening frame from a dairy farm Reel.
-- `stories/story-1.svg`, `story-2.svg`, `story-3.svg`: quiz, poll and Q&A backgrounds.
-- `profile/hero-placeholder.svg`: authentic farm photograph or moodboard.
-- `profile/portrait-placeholder.svg`: Tarek's professional portrait.
-- `profile/favicon.svg`: optional personal favicon.
+## Farm photography
+The hero, four content samples, Reel preview and three Stories use the local PNG photographs in `assets/images/`. Their paths and bilingual alternative text are configured in `IMAGE_ALT`, `POST_IMAGES` and `STORY_IMAGES` in `js/main.js`.
 
-If you use JPG/WebP/PNG, change the matching `src` paths in `js/main.js` and `index.html`; retain useful translated alt text. Use optimized files. Text remains live and bilingual over the backgrounds, so avoid photos that reduce text contrast.
+The About section still uses a portrait placeholder because no personal portrait was supplied. Replace it only with an approved photo of Tarek; `assets/images/profile/favicon.svg` can also be replaced with a personal mark.
 
 ## Contact email
 Find `CONTACT_EMAIL` near the beginning of the shared code in `js/main.js` and fill in the empty string. The source includes an explicit placeholder comment. Until then, the button shows a bilingual 'contact details not added' notice. No email address or contact service is invented.
@@ -69,4 +58,3 @@ Native buttons, labeled input, visible keyboard focus, skip link, native modal d
 
 ## Truthful positioning
 All work is clearly identified as an unofficial application concept. There are no invented metrics, paid-campaign claims, prior Mazraaty employment claims or years of Social Media Specialist experience.
-
